@@ -231,17 +231,7 @@ The system ranks hospitals using a **weighted scoring algorithm** based on:
 Each hospital is scored dynamically and ranked based on user preference.
 
 
-## 🔐 Environment Variables
 
-Create a `.env` file in the root directory and add:
-
-```env
-MISTRAL_API_KEY=your_api_key
-SARVAM_API_KEY=your_api_key
-
-
-
----
 
 ## 📊 Use Cases & Impact
 
