@@ -187,7 +187,7 @@ Intelligent-Health-Recommendation-System/
 ├── hospital_data.csv       # Dataset containing hospital details
 ├── .env                    # Environment variables (API keys)
 └── README.md               # Project documentation
-
+```
 
 ## ⚙️ Setup & Installation
 
