@@ -167,3 +167,23 @@ Where:
 ---
 
 ## 📂 Project Structure
+
+This project is organized into modular components representing the patient interface, backend broker, hospital portal, and AI processing modules.
+
+Intelligent-Health-Recommendation-System/
+│
+├── app.py                  # Patient frontend (Streamlit application)
+├── broker_api.py           # FastAPI backend (central broker / message router)
+├── hospital_portal.py      # Hospital dashboard (Streamlit app for staff)
+│
+├── Backend/
+│   └── modules/            # AI processing layer (Intelligence Engine)
+│       ├── speech_to_text.py   # Converts voice input → text (Sarvam AI)
+│       ├── translate.py        # Translates regional languages → English
+│       ├── llm_analysis.py     # Analyzes symptoms using LLM (Mistral AI)
+│       └── utils.py            # Helper functions for parsing & formatting
+│
+├── hospital_data.csv       # Dataset containing hospital details
+├── .env                    # Environment variables (API keys)
+└── README.md               # Project documentation
+
