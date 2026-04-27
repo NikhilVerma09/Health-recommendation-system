@@ -1,0 +1,9 @@
+streamlit
+fastapi
+uvicorn[standard]
+pandas
+requests
+pyaudio
+python-dotenv
+pydantic
+numpy
