@@ -166,10 +166,11 @@ Where:
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 This project is organized into modular components representing the patient interface, backend broker, hospital portal, and AI processing modules.
 
+```bash
 Intelligent-Health-Recommendation-System/
 │
 ├── app.py                  # Patient frontend (Streamlit application)
@@ -187,3 +188,101 @@ Intelligent-Health-Recommendation-System/
 ├── .env                    # Environment variables (API keys)
 └── README.md               # Project documentation
 
+
+## ⚙️ Setup & Installation
+
+### 🔧 Prerequisites
+Make sure you have the following installed:
+- Python 3.x
+- pip
+- Virtual Environment (recommended)
+
+---
+
+### 📦 Install Dependencies
+
+```bash
+pip install streamlit fastapi "uvicorn[standard]" pandas requests pyaudio python-dotenv
+
+
+
+---
+
+
+---
+
+## ✅ 3. 🔄 How It Works (Flow)
+
+```md id="s3"
+## 🔄 How It Works
+
+1. 🎤 Patient records symptoms using voice input  
+2. 🧠 AI converts speech → text → structured medical analysis  
+3. 📡 Request is sent to the Broker API  
+4. 🔁 Broker broadcasts request to multiple hospitals  
+5. 🏥 Hospitals respond with availability, cost, and wait time  
+6. 📊 System ranks hospitals dynamically  
+7. ✅ Patient receives the best recommendations
+
+## 🧮 Hospital Ranking Logic
+
+The system ranks hospitals using a **weighted scoring algorithm** based on:
+
+- Distance  
+- Wait Time  
+- Cost  
+- Specialist Availability  
+- Reviews  
+
+### 🎯 Ranking Modes:
+- 🚨 Urgent Care → prioritizes speed & distance  
+- ⭐ High Quality → prioritizes reviews & specialists  
+- ⚖️ Balanced → equal weight to all factors  
+
+Each hospital is scored dynamically and ranked based on user preference.
+
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+MISTRAL_API_KEY=your_api_key
+SARVAM_API_KEY=your_api_key
+
+
+
+---
+
+## 📊 Use Cases & Impact
+
+```md id="s6"
+## 📊 Use Cases & Impact
+
+- 🚑 Emergency medical assistance  
+- 🌍 Multilingual healthcare accessibility  
+- 🏥 Smart hospital recommendation system  
+- 👵 Elderly-friendly voice-based interaction  
+- 📡 Real-time hospital communication  
+
+This system reduces response time and improves healthcare accessibility.
+
+## 🔮 Future Improvements
+
+- ☁️ Integration with cloud databases (MongoDB / Firebase)  
+- ⚡ Real-time communication using WebSockets  
+- 🔗 Integration with hospital management systems  
+- 🔊 Text-to-Speech (AI voice response)  
+- ⌚ Integration with wearable health devices
+
+
+## 🤝 Contribution
+
+Contributions are welcome!
+
+- Fork the repository  
+- Create a new branch  
+- Make your changes  
+- Submit a pull request  
+
+For major changes, please open an issue first.
