@@ -199,22 +199,10 @@ Make sure you have the following installed:
 
 ---
 
-### 📦 Install Dependencies
-
-```bash
-pip install streamlit fastapi "uvicorn[standard]" pandas requests pyaudio python-dotenv
 
 
+## 🔄 How It Works (Flow)
 
----
-
-
----
-
-## ✅ 3. 🔄 How It Works (Flow)
-
-```md id="s3"
-## 🔄 How It Works
 
 1. 🎤 Patient records symptoms using voice input  
 2. 🧠 AI converts speech → text → structured medical analysis  
@@ -223,6 +211,7 @@ pip install streamlit fastapi "uvicorn[standard]" pandas requests pyaudio python
 5. 🏥 Hospitals respond with availability, cost, and wait time  
 6. 📊 System ranks hospitals dynamically  
 7. ✅ Patient receives the best recommendations
+   
 
 ## 🧮 Hospital Ranking Logic
 
@@ -256,8 +245,6 @@ SARVAM_API_KEY=your_api_key
 
 ## 📊 Use Cases & Impact
 
-```md id="s6"
-## 📊 Use Cases & Impact
 
 - 🚑 Emergency medical assistance  
 - 🌍 Multilingual healthcare accessibility  
